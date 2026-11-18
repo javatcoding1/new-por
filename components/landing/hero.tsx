@@ -1,6 +1,7 @@
 "use client";
 
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
+import Image from "next/image";
 import { VerseText } from "@/components/verse-text";
 import { heroConfig } from "@/config/hero";
 import { siteConfig } from "@/config/site";
@@ -143,6 +144,17 @@ export function Hero() {
               </span>
             </TooltipContent>
           </Tooltip>
+
+          <div className="inline-flex items-center gap-1.5 rounded-full border border-dashed bg-muted/15 px-2.5 py-1 text-xs text-muted-foreground transition-colors hover:border-foreground/30 hover:text-foreground">
+            <Image
+              src="/images/anime/naruto.png"
+              alt="Naruto"
+              width={16}
+              height={16}
+              className="size-4 rounded-full object-cover object-top ring-1 ring-amber-500/40"
+            />
+            <span>Anime &amp; Manga</span>
+          </div>
         </motion.div>
 
         {/* Greeting & Name */}

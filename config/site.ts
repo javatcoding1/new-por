@@ -28,6 +28,12 @@ export const aboutItems: AboutItem[] = [
     illustration: "plane",
     body: "consolidating multi-program releases into real-time dashboards and accelerating test automation across teams.",
   },
+  {
+    id: "anime",
+    lead: "Beyond engineering, I'm a passionate anime & manga follower",
+    illustration: "browser",
+    body: "inspired by the perseverance of Naruto, the sharp style of Bleach, the vast worldbuilding of One Piece, and masterworks like Jujutsu Kaisen and Berserk.",
+  },
 ];
 
 export const footerConfig: FooterConfig = {
