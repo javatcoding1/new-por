@@ -119,28 +119,8 @@ export function FrameGutters() {
               className="frame-gutter-dots-lit absolute inset-0"
             />
           </div>
-
-          {/* Technical blueprint guideline */}
-          <div className="absolute right-12 inset-y-12 border-r border-dashed border-border/30" />
-
-          {/* Architectural telemetry tags */}
-          <div className="absolute right-16 top-24 font-mono text-[9px] tracking-widest text-muted-foreground/35 select-none hidden 2xl:flex flex-col gap-0.5 uppercase">
-            <span className="font-semibold text-foreground/45">// ARCHITECTURE</span>
-            <span>Cubic SDE · Qwen LLM Gateway</span>
-            <span className="text-[8px] text-muted-foreground/25">40.7128° N / 74.0060° W</span>
-          </div>
-
-          <div className="absolute right-16 top-1/2 -translate-y-1/2 font-mono text-[9px] tracking-widest text-muted-foreground/35 select-none hidden 2xl:flex flex-col gap-0.5 uppercase">
-            <span className="font-semibold text-foreground/45">// HARDWARE SPEC</span>
-            <span>NVIDIA H200 (140GB VRAM)</span>
-            <span className="text-[8px] text-muted-foreground/25">Distributed Tensor Cores</span>
-          </div>
-
-          <div className="absolute right-16 bottom-24 font-mono text-[9px] tracking-widest text-muted-foreground/35 select-none hidden 2xl:flex flex-col gap-0.5 uppercase">
-            <span className="font-semibold text-foreground/45">// BASE LOCATION</span>
-            <span>Hyderabad, India · IST</span>
-            <span className="text-[8px] text-muted-foreground/25">17.3850° N, 78.4867° E</span>
-          </div>
+          {/* Subtle architectural vertical guideline */}
+          <div className="absolute right-12 inset-y-12 border-r border-dashed border-border/20" />
         </div>
 
         {/* Right gutter band */}
@@ -152,28 +132,8 @@ export function FrameGutters() {
               className="frame-gutter-dots-lit absolute inset-0"
             />
           </div>
-
-          {/* Technical blueprint guideline */}
-          <div className="absolute left-12 inset-y-12 border-l border-dashed border-border/30" />
-
-          {/* Architectural telemetry tags */}
-          <div className="absolute left-16 top-24 font-mono text-[9px] tracking-widest text-muted-foreground/35 select-none hidden 2xl:flex flex-col gap-0.5 uppercase">
-            <span className="font-semibold text-foreground/45">// OPEN SOURCE</span>
-            <span>HXQLabs / HelixQue</span>
-            <span className="text-[8px] text-primary/70 font-semibold">★ 140+ GitHub Stars</span>
-          </div>
-
-          <div className="absolute left-16 top-1/2 -translate-y-1/2 font-mono text-[9px] tracking-widest text-muted-foreground/35 select-none hidden 2xl:flex flex-col gap-0.5 uppercase">
-            <span className="font-semibold text-foreground/45">// NETWORKING</span>
-            <span>WebRTC Mesh · Low Latency</span>
-            <span className="text-[8px] text-muted-foreground/25">P2P Audio/Video Topology</span>
-          </div>
-
-          <div className="absolute left-16 bottom-24 font-mono text-[9px] tracking-widest text-muted-foreground/35 select-none hidden 2xl:flex flex-col gap-0.5 uppercase">
-            <span className="font-semibold text-foreground/45">// PUBLICATIONS</span>
-            <span>Springer Nature · ICICT '24</span>
-            <span className="text-[8px] text-muted-foreground/25">WCGANs & Federated Learning</span>
-          </div>
+          {/* Subtle architectural vertical guideline */}
+          <div className="absolute left-12 inset-y-12 border-l border-dashed border-border/20" />
         </div>
       </div>
     </div>

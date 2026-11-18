@@ -51,11 +51,11 @@ function SkillChip({ skill }: { skill: SkillItem }) {
   const Icon = skillIconMap[skill.icon];
 
   const chipClasses =
-    "no-js-visible inline-flex items-center gap-1.5 rounded-lg border border-dashed px-3 py-1 text-sm text-muted-foreground";
+    "no-js-visible inline-flex items-center gap-2 rounded-lg border border-dashed bg-muted/10 px-3 py-1.5 text-xs text-muted-foreground transition-all duration-200 hover:border-foreground/30 hover:bg-muted/30 hover:text-foreground hover:scale-[1.02] cursor-default";
 
   return (
     <div className={chipClasses} aria-label={skill.name}>
-      {Icon ? <Icon size="18" /> : null}
+      {Icon ? <Icon size="16" /> : null}
       <span className="font-medium">{skill.name}</span>
     </div>
   );
@@ -66,10 +66,16 @@ export function Skills() {
   const categories = skillsSectionConfig.categories;
 
   return (
-    <section className="border-t border-dashed pt-6">
-      <h2 className="no-js-visible section-heading">
-        {skillsSectionConfig.title}
-      </h2>
+    <section className="border-t border-dashed pt-8">
+      <div className="px-6 mb-2">
+        <h2 className="no-js-visible section-heading mb-1">
+          {skillsSectionConfig.title}
+        </h2>
+        <p className="text-xs text-muted-foreground">
+          Core toolkits across AI platforms, full-stack frameworks & cloud infra
+        </p>
+      </div>
+
       {categories.map((category, groupIndex) => {
         const categorySkills = skills.filter(
           (skill) => skill.category === category.id,
@@ -81,12 +87,13 @@ export function Skills() {
           <div
             key={category.id}
             className={cn(
-              "flex flex-col sm:flex-row sm:items-center gap-2.5 sm:gap-6 px-6 py-3.5 border-b",
+              "flex flex-col sm:flex-row sm:items-center gap-2.5 sm:gap-6 px-6 py-3.5 border-b border-dashed",
               groupIndex === categories.length - 1 ? "border-none" : "",
             )}
           >
-            <span className="shrink-0 w-36 font-mono text-xs tracking-wider text-muted-foreground">
-              {`0${groupIndex + 1}`.padStart(2, "0") + " " + category.label}
+            <span className="shrink-0 w-36 font-mono text-xs tracking-wider text-muted-foreground flex items-center gap-1.5">
+              <span className="text-primary/60 font-semibold">{`0${groupIndex + 1}`}</span>
+              <span>{category.label}</span>
             </span>
 
             <div className="flex flex-wrap gap-2 flex-1">
