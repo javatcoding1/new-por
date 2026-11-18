@@ -25,29 +25,29 @@ export const sectionNotes: Partial<Record<SectionId, SectionNoteConfig>> = {
     text: "Building from\nHyderabad, IN 🇮🇳",
     side: "right",
   },
+  bookshelf: {
+    text: "Management &\nleadership books",
+    side: "left",
+  },
   certifications: {
     text: "Springer Nature\n& ICICT '24 papers",
-    side: "left",
+    side: "right",
   },
   github: {
     text: "Daily code commits\n& open source",
-    side: "right",
+    side: "left",
   },
   socials: {
     text: "Buy me a coffee\n& let's connect!",
-    side: "left",
+    side: "right",
   },
   contact: {
     text: "Say hello or\nlet's build together",
-    side: "right",
+    side: "left",
   },
   testimonials: {
     text: "Feedback from\nmentors & peers",
     side: "left",
-  },
-  bookshelf: {
-    text: "Books I keep\ncoming back to",
-    side: "right",
   },
   insights: {
     text: "Visitors and views\nover the last 7 days",

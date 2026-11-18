@@ -5,9 +5,16 @@ import type { Book } from "@/config/types";
 export function Bookshelf({ books }: { books: Book[] }) {
   return (
     <section
-      className="border-t border-dashed pt-4"
+      className="border-t border-dashed pt-8"
       aria-label={bookshelfConfig.title}
     >
+      <div className="px-6 mb-2">
+        <h2 className="section-heading mb-1">{bookshelfConfig.title}</h2>
+        <p className="text-xs text-muted-foreground">
+          Foundational books on engineering management, high-output execution & systems leadership
+        </p>
+      </div>
+
       <BookshelfDisplay
         books={books}
         defaultBookId={bookshelfConfig.defaultBookId}

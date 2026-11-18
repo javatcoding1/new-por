@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 1600" width="1050" height="1600">
+  <defs>
+    <linearGradient id="bg-hom" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b132b"/>
+      <stop offset="100%" stop-color="#1c2541"/>
+    </linearGradient>
+    <linearGradient id="accent-hom" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#48cae4"/>
+      <stop offset="100%" stop-color="#00b4d8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1050" height="1600" fill="url(#bg-hom)"/>
+  
+  <!-- Outer border framing -->
+  <rect x="60" y="60" width="930" height="1480" fill="none" stroke="#48cae4" stroke-width="3" stroke-opacity="0.4"/>
+  <rect x="74" y="74" width="902" height="1452" fill="none" stroke="#ffffff" stroke-width="1" stroke-opacity="0.15"/>
+
+  <!-- Top badge -->
+  <rect x="325" y="160" width="400" height="48" rx="24" fill="#00b4d8" fill-opacity="0.15" stroke="#48cae4" stroke-width="1.5"/>
+  <text x="525" y="192" fill="#48cae4" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="20" font-weight="700" text-anchor="middle" letter-spacing="4">ENGINEERING LEADERSHIP</text>
+
+  <!-- Title -->
+  <text x="525" y="440" fill="#ffffff" font-family="Georgia, serif" font-size="94" font-weight="bold" text-anchor="middle" letter-spacing="1">HIGH</text>
+  <text x="525" y="550" fill="#ffffff" font-family="Georgia, serif" font-size="94" font-weight="bold" text-anchor="middle" letter-spacing="1">OUTPUT</text>
+  <text x="525" y="660" fill="url(#accent-hom)" font-family="Georgia, serif" font-size="90" font-weight="bold" text-anchor="middle" letter-spacing="1">MANAGEMENT</text>
+
+  <!-- Divider -->
+  <line x1="220" y1="740" x2="830" y2="740" stroke="#48cae4" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Geometric diagram: Managerial Leverage (Input -> Process -> Output) -->
+  <g transform="translate(175, 840)">
+    <rect x="0" y="0" width="180" height="90" rx="8" fill="#1c2541" stroke="#48cae4" stroke-width="2"/>
+    <text x="90" y="52" fill="#e0f2fe" font-family="sans-serif" font-size="22" font-weight="600" text-anchor="middle">INPUTS</text>
+    
+    <line x1="180" y1="45" x2="260" y2="45" stroke="#48cae4" stroke-width="3" stroke-dasharray="6,4"/>
+    <polygon points="260,40 275,45 260,50" fill="#48cae4"/>
+
+    <rect x="275" y="-15" width="190" height="120" rx="10" fill="#0077b6" fill-opacity="0.3" stroke="#00b4d8" stroke-width="3"/>
+    <text x="370" y="42" fill="#ffffff" font-family="sans-serif" font-size="24" font-weight="bold" text-anchor="middle">LEVERAGE</text>
+    <text x="370" y="72" fill="#90e0ef" font-family="sans-serif" font-size="16" text-anchor="middle">MANAGER</text>
+
+    <line x1="465" y1="45" x2="545" y2="45" stroke="#48cae4" stroke-width="3" stroke-dasharray="6,4"/>
+    <polygon points="545,40 560,45 545,50" fill="#48cae4"/>
+
+    <rect x="560" y="0" width="180" height="90" rx="8" fill="#1c2541" stroke="#48cae4" stroke-width="2"/>
+    <text x="650" y="52" fill="#e0f2fe" font-family="sans-serif" font-size="22" font-weight="600" text-anchor="middle">OUTPUT</text>
+  </g>
+
+  <!-- Author -->
+  <text x="525" y="1120" fill="#ffffff" font-family="Georgia, serif" font-size="48" font-weight="bold" text-anchor="middle" letter-spacing="3">ANDREW S. GROVE</text>
+  <text x="525" y="1180" fill="#90e0ef" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="24" text-anchor="middle" letter-spacing="2">FORMER CHAIRMAN &amp; CEO OF INTEL</text>
+
+  <!-- Quote banner at bottom -->
+  <rect x="120" y="1320" width="810" height="110" rx="12" fill="#000000" fill-opacity="0.3" stroke="#ffffff" stroke-width="1" stroke-opacity="0.1"/>
+  <text x="525" y="1365" fill="#f8fafc" font-family="Georgia, italic" font-size="22" text-anchor="middle">"The output of a manager is the output of the organizational units</text>
+  <text x="525" y="1400" fill="#f8fafc" font-family="Georgia, italic" font-size="22" text-anchor="middle">under his or her supervision or influence."</text>
+</svg>
