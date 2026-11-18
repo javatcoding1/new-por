@@ -19,6 +19,9 @@ import { Button } from "@/components/ui/button";
 import actionStyles from "@/components/shared/primary-action.module.css";
 import { CopyStatusIcon } from "@/components/showcase/copy-status-icon";
 
+import { FaLinkedin } from "react-icons/fa";
+import { SiBuymeacoffee } from "react-icons/si";
+
 const contactChannels = siteConfig.contact.channels
   .filter((item) => item.enabled !== false)
   .sort((a, b) => a.order - b.order);
@@ -29,6 +32,15 @@ function ContactIcon({ icon }: { icon: SocialIcon }) {
   }
   if (icon === "discord") {
     return <Image src="/discord.svg" alt="Discord" width={18} height={18} />;
+  }
+  if (icon === "github") {
+    return <Image src="/github.svg" alt="GitHub" width={18} height={18} />;
+  }
+  if (icon === "linkedin") {
+    return <FaLinkedin size={18} className="fill-[#0A66C2]" />;
+  }
+  if (icon === "coffee") {
+    return <SiBuymeacoffee size={18} className="fill-[#FFDD00]" />;
   }
   return <X size={18} />;
 }
@@ -70,19 +82,18 @@ export function CTA() {
         <div className="px-6 mb-6">
           <Button asChild size="lg" className={`w-fit ${actionStyles.primaryAction}`}>
             <Link
-              href="https://x.com/AdiKodez"
+              href="https://linkedin.com/in/jayanth-madhav"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => {
                 trackEvent("social_link_clicked", {
-                  platform: "x",
-                  url: "https://x.com/AdiKodez",
+                  platform: "linkedin",
+                  url: "https://linkedin.com/in/jayanth-madhav",
                   location: "contact_section",
                 });
               }}
             >
-              <X data-icon="inline-start" />
-              Follow @AdiKodez
+              Connect on LinkedIn
             </Link>
           </Button>
         </div>

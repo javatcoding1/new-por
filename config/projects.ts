@@ -2,11 +2,31 @@ import type { Project } from "@/config/types";
 
 export const projectsSectionConfig = {
   title: "Featured Projects",
-  liveButtonLabel: "Live site",
+  liveButtonLabel: "Live platform",
   sourceButtonLabel: "Source code",
 };
 
 export const projectsConfig: Project[] = [
+  {
+    id: "helixque",
+    title: "HelixQue (HXQLabs)",
+    tagline: "★ 140+ Stars · Scalable 1:1 Video Networking Platform",
+    description:
+      "Scalable 1:1 video networking and mentorship platform supporting active developers with low-latency WebRTC and real-time Socket.io signaling.",
+    content:
+      "Architected scalable 1:1 video networking platform supporting 100+ active users with Node.js and TypeScript. Engineered custom TURN/STUN WebRTC infrastructure and Socket.io signaling, bringing peer connection negotiation to sub-100ms. Led project to 140+ GitHub stars and 1000+ views, implementing automated CI/CD via GitHub Actions for Vercel deployment.",
+    image: "/talvess.png",
+    imageAlt: "HelixQue platform interface and WebRTC architecture",
+    imageTone: "dark",
+    liveUrl: "https://helixque.vercel.app",
+    githubUrl: "https://github.com/HXQLabs/HelixQue",
+    tags: ["Featured", "★ 140+ Stars", "WebRTC", "Socket.io", "TypeScript", "Node.js", "TURN/STUN", "Vercel"],
+    year: 2024,
+    status: "shipped",
+    category: "Featured Open-Source / WebRTC",
+    order: 1,
+    enabled: true,
+  },
   {
     id: "llm-gateway-pr-reviewer",
     title: "Qwen LLM Gateway & AI Agents",
@@ -23,26 +43,6 @@ export const projectsConfig: Project[] = [
     year: 2024,
     status: "shipped",
     category: "AI & Infrastructure",
-    order: 1,
-    enabled: true,
-  },
-  {
-    id: "helixque",
-    title: "HelixQue (HXQLabs)",
-    tagline: "1:1 Video networking & mentorship platform",
-    description:
-      "Scalable 1:1 video networking and mentorship platform supporting active developers with real-time WebRTC.",
-    content:
-      "Architected a scalable video platform with custom TURN/STUN WebRTC infrastructure and Socket.io signaling. Reached 140+ GitHub stars with automated CI/CD via GitHub Actions for Vercel deployment.",
-    image: "/talvess.png",
-    imageAlt: "HelixQue platform interface",
-    imageTone: "dark",
-    liveUrl: "https://helixque.vercel.app",
-    githubUrl: "https://github.com/HXQLabs/HelixQue",
-    tags: ["Next.js", "TypeScript", "Node.js", "WebRTC", "Socket.io", "Vercel"],
-    year: 2024,
-    status: "shipped",
-    category: "WebRTC & Full-Stack",
     order: 2,
     enabled: true,
   },
