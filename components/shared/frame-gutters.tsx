@@ -4,31 +4,27 @@ import { cn } from "@/lib/utils";
 import { useEffect, useRef } from "react";
 
 /**
- * Decoration for the dead space either side of the centered column.
+ * Decoration for the margins either side of the centered column.
  *
- * A fixed, inert layer that hangs a dot field off each frame edge. Both bands
- * are anchored to `--frame-max-w`, so they track the column rather than the
- * viewport and stay aligned on routes that widen the frame.
+ * A fixed, inert layer that hangs an interactive dot field off each frame edge.
+ * Both bands are anchored to `--frame-max-w`, tracking the column rather than
+ * the viewport and staying aligned across routes.
  *
  * The grid is drawn twice per band — a muted base layer and an accent layer
  * revealed through a soft circle that follows the pointer, so the dots light up
  * under the cursor. Pointer coordinates are written straight to the accent
- * layer's style as CSS variables, which keeps the effect off React's render
- * path.
- *
- * Only shown from `xl` up: below that the gutter is narrower than the section
- * rail's reach and the bands would crowd it.
+ * layer's style as CSS variables, keeping the effect off React's render path.
  */
 
-/** 12rem of band, faded top and bottom so it never runs into the header. */
+/** Wide band covering full gutter space, faded top and bottom so it never runs into header or footer. */
 const BAND =
-  "absolute inset-y-0 w-48 [mask-image:linear-gradient(to_bottom,transparent,black_6rem,black_calc(100%_-_6rem),transparent)]";
+  "absolute inset-y-0 w-[max(24rem,calc((100vw-var(--frame-max-w))/2+2rem))] [mask-image:linear-gradient(to_bottom,transparent,black_4rem,black_calc(100%_-_4rem),transparent)]";
 
 /** Fades the field out toward the viewport edge. Sits on the wrapper so the
  *  lit layer can spend its own mask on the pointer circle. */
 const FIELD_FADE = {
-  left: "[mask-image:linear-gradient(to_left,black,transparent_78%)]",
-  right: "[mask-image:linear-gradient(to_right,black,transparent_78%)]",
+  left: "[mask-image:linear-gradient(to_left,black_30%,transparent_96%)]",
+  right: "[mask-image:linear-gradient(to_right,black_30%,transparent_96%)]",
 };
 
 export function FrameGutters() {
@@ -36,14 +32,12 @@ export function FrameGutters() {
   const rightLit = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    // Match the xl visibility breakpoint as well as pointer capability, so
+    // Match the lg visibility breakpoint as well as pointer capability, so
     // hidden bands never schedule pointer work.
     const query = window.matchMedia(
-      "(min-width: 80rem) and (hover: hover) and (pointer: fine)",
+      "(min-width: 64rem) and (hover: hover) and (pointer: fine)",
     );
 
-    // The bands are fixed, so their boxes only move on resize — measure once
-    // and reuse instead of reading layout on every pointer sample.
     let boxes: { el: HTMLDivElement; left: number; top: number }[] = [];
     const measure = () => {
       boxes = [];
@@ -113,9 +107,10 @@ export function FrameGutters() {
     <div
       aria-hidden
       data-frame-gutters=""
-      className="pointer-events-none fixed inset-0 z-0 hidden select-none overflow-hidden xl:block"
+      className="pointer-events-none fixed inset-0 z-0 hidden select-none overflow-hidden lg:block"
     >
       <div className="relative mx-auto h-full w-full max-w-[var(--frame-max-w)]">
+        {/* Left gutter band */}
         <div className={cn(BAND, "right-full")}>
           <div className={cn("absolute inset-0", FIELD_FADE.left)}>
             <div className="frame-gutter-dots absolute inset-0" />
@@ -124,8 +119,31 @@ export function FrameGutters() {
               className="frame-gutter-dots-lit absolute inset-0"
             />
           </div>
+
+          {/* Technical blueprint guideline */}
+          <div className="absolute right-12 inset-y-12 border-r border-dashed border-border/30" />
+
+          {/* Architectural telemetry tags */}
+          <div className="absolute right-16 top-24 font-mono text-[9px] tracking-widest text-muted-foreground/35 select-none hidden 2xl:flex flex-col gap-0.5 uppercase">
+            <span className="font-semibold text-foreground/45">// ARCHITECTURE</span>
+            <span>Cubic SDE · Qwen LLM Gateway</span>
+            <span className="text-[8px] text-muted-foreground/25">40.7128° N / 74.0060° W</span>
+          </div>
+
+          <div className="absolute right-16 top-1/2 -translate-y-1/2 font-mono text-[9px] tracking-widest text-muted-foreground/35 select-none hidden 2xl:flex flex-col gap-0.5 uppercase">
+            <span className="font-semibold text-foreground/45">// HARDWARE SPEC</span>
+            <span>NVIDIA H200 (140GB VRAM)</span>
+            <span className="text-[8px] text-muted-foreground/25">Distributed Tensor Cores</span>
+          </div>
+
+          <div className="absolute right-16 bottom-24 font-mono text-[9px] tracking-widest text-muted-foreground/35 select-none hidden 2xl:flex flex-col gap-0.5 uppercase">
+            <span className="font-semibold text-foreground/45">// BASE LOCATION</span>
+            <span>Hyderabad, India · IST</span>
+            <span className="text-[8px] text-muted-foreground/25">17.3850° N, 78.4867° E</span>
+          </div>
         </div>
 
+        {/* Right gutter band */}
         <div className={cn(BAND, "left-full")}>
           <div className={cn("absolute inset-0", FIELD_FADE.right)}>
             <div className="frame-gutter-dots absolute inset-0" />
@@ -133,6 +151,28 @@ export function FrameGutters() {
               ref={rightLit}
               className="frame-gutter-dots-lit absolute inset-0"
             />
+          </div>
+
+          {/* Technical blueprint guideline */}
+          <div className="absolute left-12 inset-y-12 border-l border-dashed border-border/30" />
+
+          {/* Architectural telemetry tags */}
+          <div className="absolute left-16 top-24 font-mono text-[9px] tracking-widest text-muted-foreground/35 select-none hidden 2xl:flex flex-col gap-0.5 uppercase">
+            <span className="font-semibold text-foreground/45">// OPEN SOURCE</span>
+            <span>HXQLabs / HelixQue</span>
+            <span className="text-[8px] text-primary/70 font-semibold">★ 140+ GitHub Stars</span>
+          </div>
+
+          <div className="absolute left-16 top-1/2 -translate-y-1/2 font-mono text-[9px] tracking-widest text-muted-foreground/35 select-none hidden 2xl:flex flex-col gap-0.5 uppercase">
+            <span className="font-semibold text-foreground/45">// NETWORKING</span>
+            <span>WebRTC Mesh · Low Latency</span>
+            <span className="text-[8px] text-muted-foreground/25">P2P Audio/Video Topology</span>
+          </div>
+
+          <div className="absolute left-16 bottom-24 font-mono text-[9px] tracking-widest text-muted-foreground/35 select-none hidden 2xl:flex flex-col gap-0.5 uppercase">
+            <span className="font-semibold text-foreground/45">// PUBLICATIONS</span>
+            <span>Springer Nature · ICICT '24</span>
+            <span className="text-[8px] text-muted-foreground/25">WCGANs & Federated Learning</span>
           </div>
         </div>
       </div>

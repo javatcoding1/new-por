@@ -22,7 +22,7 @@
   transform: scaleX(-1);
 }
 
-@media (min-width: 80rem) {
+@media (min-width: 72rem) {
   .note {
     display: flex;
     position: absolute;

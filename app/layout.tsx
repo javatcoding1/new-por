@@ -1,6 +1,7 @@
 import { BottomNav } from "@/components/landing/bottom-nav";
 import { BackToTop } from "@/components/shared/back-to-top";
 import { FrameGutters } from "@/components/shared/frame-gutters";
+import { SideBadges } from "@/components/shared/side-badges";
 import { PostHogProvider } from "@/components/shared/posthog-provider";
 import { SiteHeader } from "@/components/shared/site-header";
 import { ThemeProvider } from "@/components/shared/theme-provider";
@@ -173,6 +174,7 @@ export default function RootLayout({
               <div data-site-chrome="" className="contents">
                 <SiteHeader />
                 <FrameGutters />
+                <SideBadges />
               </div>
               <div data-site-frame="" className="relative mx-auto w-full max-w-[var(--frame-max-w)]">
                 <div data-site-surface="" className="relative w-full border-x bg-muted/20">
