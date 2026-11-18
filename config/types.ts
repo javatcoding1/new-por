@@ -213,7 +213,8 @@ export type SocialIcon =
   | "discord"
   | "gmail"
   | "reddit"
-  | "linkedin";
+  | "linkedin"
+  | "coffee";
 
 export interface Testimonial {
   id: string;

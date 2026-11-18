@@ -13,6 +13,7 @@ import Gmail from "@/public/stacks/gmail";
 import X from "@/public/x-icon";
 import { Kbd } from "@/components/ui/kbd";
 import { FaReddit, FaLinkedin } from "react-icons/fa";
+import { SiBuymeacoffee } from "react-icons/si";
 import {
   Tooltip,
   TooltipContent,
@@ -50,6 +51,8 @@ function SocialIconNode({
       return <FaReddit size={size} className="fill-orange-500" />;
     case "linkedin":
       return <FaLinkedin size={size} className="fill-[#0A66C2]" />;
+    case "coffee":
+      return <SiBuymeacoffee size={size} className="fill-[#FFDD00]" />;
     default:
       return null;
   }

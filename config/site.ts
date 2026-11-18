@@ -140,8 +140,8 @@ export const siteConfig: PortfolioConfig = {
     "skills",
     "about",
     "certifications",
-    "socials",
     "github",
+    "socials",
   ],
   sectionFlags: {
     socials: true,

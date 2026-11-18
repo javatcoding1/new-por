@@ -112,7 +112,7 @@ export const sponsorSupportLinks: SponsorSupportLink[] = [
   {
     id: "buy-me-a-coffee",
     label: "Buy me a coffee",
-    href: "https://buymeacoffee.com/adikodez",
+    href: "https://buymeacoffee.com/jayanthmadhav",
     icon: "coffee",
     order: 1,
     enabled: true,
@@ -120,7 +120,7 @@ export const sponsorSupportLinks: SponsorSupportLink[] = [
   {
     id: "talk-on-x",
     label: "Talk on X",
-    href: "https://x.com/i/chat/1740734892550291456-1740734892550291456",
+    href: "https://x.com/ejayanthmadhav",
     icon: "x",
     order: 2,
     enabled: true,

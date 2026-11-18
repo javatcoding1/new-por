@@ -75,8 +75,7 @@ const staticSections: Record<Exclude<SectionId, "github">, ReactElement> = {
 };
 
 export default function Home() {
-  const showGithub =
-    siteConfig.sectionFlags.github && Boolean(process.env.GITHUB_TOKEN);
+  const showGithub = Boolean(siteConfig.sectionFlags.github);
   const visibleSections = siteConfig.sectionOrder.filter(
     (id) => siteConfig.sectionFlags[id] && (id !== "github" || showGithub),
   );

@@ -47,4 +47,15 @@ export const socialsConfig: SocialLink[] = [
     order: 4,
     enabled: true,
   },
+  {
+    id: "buymeacoffee",
+    platform: "Buy Me a Coffee",
+    handle: "jayanthmadhav",
+    href: "https://buymeacoffee.com/jayanthmadhav",
+    icon: "coffee",
+    action: "external",
+    tooltipDefault: "Support on Buy Me a Coffee",
+    order: 5,
+    enabled: true,
+  },
 ];

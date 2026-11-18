@@ -14,9 +14,9 @@ import TSIcon from "@/public/stacks/ts";
 import JSIcon from "@/public/stacks/js";
 import type { ComponentType } from "react";
 import { BsClaude } from "react-icons/bs";
-import { SiReactquery, SiPython, SiPostgresql, SiDocker, SiNvidia, SiPlaywright } from "react-icons/si";
+import { SiReactquery, SiPython, SiPostgresql, SiDocker, SiNvidia } from "react-icons/si";
 import { FaJava, FaNodeJs, FaAws } from "react-icons/fa";
-import { Bot } from "lucide-react";
+import { Bot, FlaskConical } from "lucide-react";
 
 const skillIconMap: Record<SkillIcon, ComponentType<{ size: string }>> = {
   nextjs: NextjsIcon,
@@ -39,7 +39,7 @@ const skillIconMap: Record<SkillIcon, ComponentType<{ size: string }>> = {
   aws: ({ size }: { size: string }) => <FaAws size={Number(size) || 18} />,
   docker: ({ size }: { size: string }) => <SiDocker size={Number(size) || 18} />,
   nvidia: ({ size }: { size: string }) => <SiNvidia size={Number(size) || 18} />,
-  playwright: ({ size }: { size: string }) => <SiPlaywright size={Number(size) || 18} />,
+  playwright: ({ size }: { size: string }) => <FlaskConical size={Number(size) || 18} />,
   llm: ({ size }: { size: string }) => <Bot size={Number(size) || 18} />,
 };
 
