@@ -1,0 +1,38 @@
+[
+  {
+    "id": "pay_0NnVTVxfMVfkEoLNcqhwx",
+    "name": "vakh",
+    "date": "2026-09-13",
+    "seat": 0,
+    "order": 1,
+    "enabled": true,
+    "paymentId": "pay_0NnVTVxfMVfkEoLNcqhwx",
+    "claimed": true,
+    "url": "https://vakh.com/",
+    "logo": "/sponsors/pay_0NnVTVxfMVfkEoLNcqhwx.webp"
+  },
+  {
+    "id": "pay_0Nrz8A7y7OLbCFQGFEDz6",
+    "name": "Anubhav Choubey",
+    "date": "2026-11-15",
+    "seat": 1,
+    "order": 2,
+    "enabled": true,
+    "paymentId": "pay_0Nrz8A7y7OLbCFQGFEDz6",
+    "claimed": true,
+    "url": "https://anubhavchoubey.com/",
+    "logo": "/sponsors/pay_0Nrz8A7y7OLbCFQGFEDz6.jpg"
+  },
+  {
+    "id": "pay_0Ns6Owuj2MkWlwm9bDjIX",
+    "name": "Liniqo",
+    "date": "2026-11-16",
+    "seat": 2,
+    "order": 3,
+    "enabled": true,
+    "paymentId": "pay_0Ns6Owuj2MkWlwm9bDjIX",
+    "claimed": true,
+    "url": "https://liniqo.com/",
+    "logo": "/sponsors/pay_0Ns6Owuj2MkWlwm9bDjIX.png"
+  }
+]

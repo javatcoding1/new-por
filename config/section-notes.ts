@@ -1,0 +1,20 @@
+import type { SectionId, SectionNoteConfig } from "@/config/types";
+
+export const sectionNotes: Partial<Record<SectionId, SectionNoteConfig>> = {
+  components: {
+    text: "Copy, paste,\nmake it yours",
+    side: "right",
+  },
+  insights: {
+    text: "Visitors and views\nover the last 7 days",
+    side: "right",
+  },
+  testimonials: {
+    text: "Big thanks\nto these folks",
+    side: "left",
+  },
+  bookshelf: {
+    text: "Books I keep\ncoming back to",
+    side: "right",
+  },
+};
