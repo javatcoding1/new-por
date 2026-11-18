@@ -90,6 +90,22 @@ export const booksConfig: Book[] = [
     enabled: true,
   },
   {
+    id: "blue-lock",
+    title: "Blue Lock, Vol. 1: Yoichi Isagi",
+    author: "Muneyuki Kaneshiro & Yusuke Nomura",
+    cover: {
+      src: "/images/books/blue-lock-cover.jpg",
+      width: 460,
+      height: 688,
+      alt: "Blue Lock Vol. 1 by Muneyuki Kaneshiro, featuring Yoichi Isagi bound by chains with a soccer ball",
+    },
+    sourceUrl: "https://kodansha.us/series/blue-lock/",
+    coverSourceUrl: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx106130-yPNeuSu75ey1.jpg",
+    spine: { src: "/images/books/blue-lock-spine.svg", height: 265, width: 38 },
+    order: 5,
+    enabled: true,
+  },
+  {
     id: "jujutsu-kaisen",
     title: "Jujutsu Kaisen, Vol. 1: Ryomen Sukuna",
     author: "Gege Akutami",

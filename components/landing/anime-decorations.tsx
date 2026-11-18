@@ -59,6 +59,32 @@ export const ANIME_CHARACTERS: AnimeCharacter[] = [
       "Levi embodies disciplined execution under extreme pressure. No excuses, no hesitation, just ruthless execution and moving forward.",
   },
   {
+    id: "isagi",
+    name: "Yoichi Isagi",
+    series: "Blue Lock",
+    quote: "I can see the entire field... The puzzle pieces of victory connect perfectly!",
+    image: "/images/anime/isagi-full.png",
+    fullImage: "/images/anime/isagi-full.png",
+    badge: "Blue Lock Ace · Metavision",
+    color: "#10b981",
+    tagline: "Spatial Intuition & Tactical Adaptation",
+    jayanthWhy:
+      "Isagi's ability to read the whole field with Metavision, adapt under extreme pressure, and piece together the solution is my favorite model for problem solving.",
+  },
+  {
+    id: "ego",
+    name: "Jinpachi Ego",
+    series: "Blue Lock",
+    quote: "Devour or be devoured. Architect the formula for victory.",
+    image: "/images/anime/ego-full.png",
+    fullImage: "/images/anime/ego-full.png",
+    badge: "Mastermind · Blue Lock Architect",
+    color: "#06b6d4",
+    tagline: "Egoist Philosophy & Radical Feedback Loops",
+    jayanthWhy:
+      "Ego eliminates excuses and designs high-pressure systems that forge unshakeable mastery.",
+  },
+  {
     id: "deku",
     name: "Izuku Midoriya",
     series: "My Hero Academia",

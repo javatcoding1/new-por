@@ -3,9 +3,9 @@
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { Flame, Sparkles, Swords, Eye, X, Volume2, ShieldCheck, Heart } from "lucide-react";
+import { Flame, Sparkles, Swords, Eye, X, Volume2, ShieldCheck, Heart, Trophy, Target } from "lucide-react";
 
-export type AnimeId = "naruto" | "gojo" | "levi" | "asta" | "ichigo";
+export type AnimeId = "naruto" | "gojo" | "levi" | "isagi" | "ego" | "asta" | "ichigo";
 
 export interface FullCharacter {
   id: AnimeId;
@@ -94,6 +94,52 @@ export const ANIME_LEGENDS: Record<AnimeId, FullCharacter> = {
     vibe: "Ruthless Discipline & Flawless Execution",
     jayanthNote:
       "Levi is pure focus and no-excuses execution. When everything is on the line, he cuts through chaos with razor-sharp discipline and zero hesitation.",
+  },
+  isagi: {
+    id: "isagi",
+    name: "Yoichi Isagi",
+    jpName: "潔 世一",
+    title: "METAVISION · BLUE LOCK ACE",
+    roleTag: "Spatial Intuition & Direct Shot",
+    series: "Blue Lock",
+    color: "#10b981",
+    gradient: "from-emerald-500 via-teal-500 to-cyan-500",
+    image: "/images/anime/isagi-full.png",
+    width: 1780,
+    height: 2048,
+    quotes: [
+      "I can see it... The pieces of the puzzle connecting perfectly!",
+      "I will devour you all and become the world's number one striker!",
+      "Smell the goal. Overwrite your subconscious.",
+      "The equation for victory is already complete in my mind.",
+    ],
+    signatureMove: "Metavision & Direct Shot Volley",
+    vibe: "Relentless Analytical Devouring & Adaptation",
+    jayanthNote:
+      "Isagi represents analytical evolution. When facing impossible problems, he pieces together the puzzle, reads the field with Metavision, and reinvents himself on the fly.",
+  },
+  ego: {
+    id: "ego",
+    name: "Jinpachi Ego",
+    jpName: "絵心 甚八",
+    title: "MASTERMIND · BLUE LOCK ARCHITECT",
+    roleTag: "Uncompromising Ambition",
+    series: "Blue Lock",
+    color: "#06b6d4",
+    gradient: "from-cyan-500 via-sky-600 to-blue-700",
+    image: "/images/anime/ego-full.png",
+    width: 1780,
+    height: 2048,
+    quotes: [
+      "Devour or be devoured. That is the essence of raw ambition.",
+      "Lock off! Abandon common sense and create your own formula for victory.",
+      "Talent is the ability to prove your own genius.",
+      "Unpolished gems... let me forge you into egoists.",
+    ],
+    signatureMove: "Blue Lock Philosophy & Formula for Genius",
+    vibe: "Cold Strategic Intellect & Zero Compromise",
+    jayanthNote:
+      "Ego rejects mediocrity. He designs closed-loop systems that force exponential growth through ruthless feedback loops and extreme clarity.",
   },
   asta: {
     id: "asta",
@@ -207,7 +253,7 @@ function MobileCharacterModal({
 
           {/* Character Selector Tabs */}
           <div className="flex border-b bg-muted/30 p-1.5 gap-1 overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-            {(["naruto", "gojo", "levi", "asta", "ichigo"] as const).map((key) => {
+            {(["naruto", "gojo", "levi", "isagi", "ego", "asta", "ichigo"] as const).map((key) => {
               const c = ANIME_LEGENDS[key];
               const isSelected = activeTab === key;
               return (
@@ -329,7 +375,7 @@ function MobileCharacterModal({
 
           {/* Footer Bar */}
           <div className="flex items-center justify-between border-t bg-muted/20 px-5 py-3 text-xs font-mono text-muted-foreground">
-            <span>Shonen Jump Legends</span>
+            <span>Anime & Manga Legends</span>
             <button
               type="button"
               onClick={onClose}
@@ -376,7 +422,7 @@ export function AnimeSidebar() {
             className="flex items-center gap-2 rounded-full border border-foreground/20 bg-card/90 px-3.5 py-1.5 shadow-lg backdrop-blur-md text-[11px] font-mono font-semibold text-foreground hover:bg-card"
           >
             <span className="flex size-2 rounded-full bg-amber-500 animate-pulse" />
-            <span>🍥 Naruto • 👁️ Gojo • ⚔️ Levi • Asta</span>
+            <span>🍥 Naruto • 👁️ Gojo • 🧩 Isagi • 👓 Ego • ⚔️ Levi</span>
             <span className="rounded bg-muted px-1.5 text-[9px] text-muted-foreground">legends</span>
           </motion.button>
         </div>
