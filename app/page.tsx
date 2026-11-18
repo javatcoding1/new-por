@@ -22,6 +22,7 @@ import { SponsorsSection } from "@/components/landing/sponsors";
 import { Testimonials } from "@/components/landing/testimonials";
 import { PixelDissolve } from "@/components/ui/pixel-dissolve";
 import { SideNote } from "@/components/shared/side-note";
+import { SectionAnimeCompanion } from "@/components/shared/section-anime";
 import { projectsConfig, projectsSectionConfig } from "@/config/projects";
 import { getEnabledBooks } from "@/config/books";
 import { diwaliConfig } from "@/config/diwali";
@@ -86,7 +87,8 @@ export default function Home() {
         id="main-content"
         className="relative flex min-h-dvh flex-col gap-y-4 overflow-x-clip border-x bg-background pt-8 min-[72rem]:overflow-x-visible xl:overflow-x-visible"
       >
-        <div id="hero" className="bg-background scroll-mt-20">
+        <div id="hero" className="relative bg-background scroll-mt-20">
+          <SectionAnimeCompanion sectionId="hero" />
           <ProfileBanner />
           <Hero />
         </div>
@@ -116,6 +118,7 @@ export default function Home() {
             >
               {sectionId === "about" && diwaliConfig.enabled && <DiwaliScene />}
               {note && <SideNote side={note.side}>{note.text}</SideNote>}
+              <SectionAnimeCompanion sectionId={sectionId} />
               {content}
             </div>
           );
