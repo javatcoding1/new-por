@@ -58,6 +58,38 @@ export const booksConfig: Book[] = [
     enabled: true,
   },
   {
+    id: "my-hero-academia",
+    title: "My Hero Academia, Vol. 1: Izuku Midoriya: Origin",
+    author: "Kohei Horikoshi",
+    cover: {
+      src: "/images/books/mha-cover.jpg",
+      width: 460,
+      height: 718,
+      alt: "My Hero Academia Vol. 1 by Kohei Horikoshi, featuring Izuku Midoriya and All Might",
+    },
+    sourceUrl: "https://www.viz.com/read/manga/my-hero-academia-volume-1/product/3831",
+    coverSourceUrl: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx85486-INqnYx8gL3eX.jpg",
+    spine: { src: "/images/books/mha-spine.svg", height: 265, width: 38 },
+    order: 3,
+    enabled: true,
+  },
+  {
+    id: "black-clover",
+    title: "Black Clover, Vol. 1: The Boy's Vow",
+    author: "Yuki Tabata",
+    cover: {
+      src: "/images/books/black-clover-cover.png",
+      width: 460,
+      height: 674,
+      alt: "Black Clover Vol. 1 by Yuki Tabata, featuring Asta with the Demon-Slayer Sword",
+    },
+    sourceUrl: "https://www.viz.com/read/manga/black-clover-volume-1/product/4724",
+    coverSourceUrl: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx114652-b4VxxYpvU8id.png",
+    spine: { src: "/images/books/black-clover-spine.svg", height: 265, width: 38 },
+    order: 4,
+    enabled: true,
+  },
+  {
     id: "jujutsu-kaisen",
     title: "Jujutsu Kaisen, Vol. 1: Ryomen Sukuna",
     author: "Gege Akutami",
@@ -70,7 +102,7 @@ export const booksConfig: Book[] = [
     sourceUrl: "https://www.viz.com/read/manga/jujutsu-kaisen-volume-1/product/6105",
     coverSourceUrl: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx101517-H3TdM3g5ZUe9.jpg",
     spine: { src: "/images/books/jujutsu-kaisen-spine.svg", height: 265, width: 38 },
-    order: 3,
+    order: 5,
     enabled: true,
   },
   {
@@ -86,7 +118,7 @@ export const booksConfig: Book[] = [
     sourceUrl: "https://kodansha.us/series/attack-on-titan/",
     coverSourceUrl: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx53390-1RsuABC34P9D.jpg",
     spine: { src: "/images/books/attack-on-titan-spine.svg", height: 265, width: 38 },
-    order: 4,
+    order: 6,
     enabled: true,
   },
   {
@@ -102,7 +134,7 @@ export const booksConfig: Book[] = [
     sourceUrl: "https://www.viz.com/read/manga/death-note-volume-1/product/682",
     coverSourceUrl: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30021-FE6kmrfpuKyb.jpg",
     spine: { src: "/images/books/death-note-spine.svg", height: 265, width: 38 },
-    order: 5,
+    order: 7,
     enabled: true,
   },
   {
@@ -118,7 +150,7 @@ export const booksConfig: Book[] = [
     sourceUrl: "https://www.darkhorse.com/Books/12-077/Berserk-Volume-1-TPB",
     coverSourceUrl: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30002-Cul4OeN7bYtn.jpg",
     spine: { src: "/images/books/berserk-spine.svg", height: 265, width: 38 },
-    order: 6,
+    order: 8,
     enabled: true,
   },
   {
@@ -134,7 +166,7 @@ export const booksConfig: Book[] = [
     sourceUrl: "https://www.penguinrandomhouse.com/books/72224/high-output-management-by-andrew-s-grove/",
     coverSourceUrl: "https://www.penguinrandomhouse.com/books/72224/high-output-management-by-andrew-s-grove/",
     spine: { src: "/images/books/high-output-management-spine.svg", height: 265, width: 40 },
-    order: 7,
+    order: 9,
     enabled: true,
   },
   {
@@ -152,7 +184,7 @@ export const booksConfig: Book[] = [
     coverSourceUrl:
       "https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781501135927/shoe-dog-9781501135927_hr.jpg",
     spine: { src: "/images/books/shoe-dog-spine.svg", height: 260, width: 37 },
-    order: 8,
+    order: 10,
     enabled: true,
   },
   {
@@ -170,7 +202,7 @@ export const booksConfig: Book[] = [
     coverSourceUrl:
       "https://hermiene.net/images/books/hi-res/atomic-habits--clear_front.png",
     spine: { src: "/images/books/atomic-habits-spine.svg", height: 252, width: 29 },
-    order: 9,
+    order: 11,
     enabled: true,
   },
 ];
