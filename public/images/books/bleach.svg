@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 1600" width="1050" height="1600">
+  <defs>
+    <linearGradient id="bg-bleach" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="50%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1050" height="1600" fill="url(#bg-bleach)"/>
+
+  <!-- Shonen Jump top badge -->
+  <rect x="0" y="0" width="1050" height="100" fill="#09090b"/>
+  <rect x="60" y="22" width="220" height="56" rx="8" fill="#e11d48"/>
+  <text x="170" y="60" fill="#ffffff" font-family="'Arial Black', sans-serif" font-size="26" font-weight="900" text-anchor="middle" letter-spacing="2">SHONEN JUMP</text>
+  <text x="960" y="65" fill="#f97316" font-family="'Arial Black', sans-serif" font-size="34" font-weight="900" text-anchor="end">VOL. 1</text>
+
+  <!-- Hollow Skull / Shinigami Badge Emblem -->
+  <g transform="translate(525, 480)">
+    <!-- Outer sharp ring -->
+    <circle cx="0" cy="0" r="180" fill="none" stroke="#09090b" stroke-width="8"/>
+    <circle cx="0" cy="0" r="165" fill="#09090b"/>
+    <!-- Stylized skull face -->
+    <path d="M -70,-80 C -40,-110 40,-110 70,-80 C 110,-40 100,50 60,90 L 40,130 L -40,130 L -60,90 C -100,50 -110,-40 -70,-80 Z" fill="#ffffff"/>
+    <!-- Eye sockets -->
+    <ellipse cx="-35" cy="-20" rx="22" ry="32" fill="#09090b" transform="rotate(-15 -35 -20)"/>
+    <ellipse cx="35" cy="-20" rx="22" ry="32" fill="#09090b" transform="rotate(15 35 -20)"/>
+    <!-- Teeth slits -->
+    <line x1="-30" y1="95" x2="-30" y2="125" stroke="#09090b" stroke-width="6"/>
+    <line x1="-10" y1="95" x2="-10" y2="125" stroke="#09090b" stroke-width="6"/>
+    <line x1="10" y1="95" x2="10" y2="125" stroke="#09090b" stroke-width="6"/>
+    <line x1="30" y1="95" x2="30" y2="125" stroke="#09090b" stroke-width="6"/>
+    <!-- Crossbones / sword guards behind -->
+    <rect x="-140" y="-12" width="280" height="24" rx="6" fill="#f97316"/>
+  </g>
+
+  <!-- Big Stylized "BLEACH" Title -->
+  <g transform="translate(525, 840)">
+    <text x="0" y="6" fill="#f97316" font-family="'Arial Black', Impact, sans-serif" font-size="180" font-weight="900" text-anchor="middle" letter-spacing="10">BLEACH</text>
+    <text x="0" y="0" fill="#09090b" font-family="'Arial Black', Impact, sans-serif" font-size="180" font-weight="900" text-anchor="middle" letter-spacing="10">BLEACH</text>
+  </g>
+
+  <!-- Japanese Katakana -->
+  <text x="525" y="960" fill="#64748b" font-family="'Noto Sans JP', sans-serif" font-size="44" font-weight="bold" text-anchor="middle" letter-spacing="16">ブリーチ</text>
+
+  <!-- Volume Subtitle: THE DEATH & THE STRAWBERRY -->
+  <rect x="200" y="1060" width="650" height="74" rx="12" fill="#09090b"/>
+  <text x="525" y="1108" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="800" text-anchor="middle" letter-spacing="4">THE DEATH &amp; THE STRAWBERRY</text>
+
+  <!-- Author Tite Kubo -->
+  <text x="525" y="1320" fill="#09090b" font-family="Georgia, serif" font-size="48" font-weight="bold" text-anchor="middle" letter-spacing="6">TITE KUBO</text>
+  <text x="525" y="1375" fill="#f97316" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="22" font-weight="700" text-anchor="middle" letter-spacing="8">STORY &amp; ART</text>
+
+  <!-- Bottom Bar -->
+  <line x1="120" y1="1460" x2="930" y2="1460" stroke="#09090b" stroke-width="4"/>
+  <text x="525" y="1510" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" letter-spacing="6">SHONEN JUMP · VIZ MEDIA</text>
+</svg>

@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 1600" width="1050" height="1600">
+  <defs>
+    <linearGradient id="bg-op" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="60%" stop-color="#0369a1"/>
+      <stop offset="100%" stop-color="#082f49"/>
+    </linearGradient>
+    <linearGradient id="gold-op" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+  </defs>
+  <rect width="1050" height="1600" fill="url(#bg-op)"/>
+
+  <!-- Shonen Jump top badge -->
+  <rect x="0" y="0" width="1050" height="100" fill="#000000" fill-opacity="0.4"/>
+  <rect x="60" y="22" width="220" height="56" rx="8" fill="#e11d48"/>
+  <text x="170" y="60" fill="#ffffff" font-family="'Arial Black', sans-serif" font-size="26" font-weight="900" text-anchor="middle" letter-spacing="2">SHONEN JUMP</text>
+  <text x="960" y="65" fill="#fef08a" font-family="'Arial Black', sans-serif" font-size="34" font-weight="900" text-anchor="end">VOL. 1</text>
+
+  <!-- Straw Hat Jolly Roger Emblem -->
+  <g transform="translate(525, 460)">
+    <!-- Crossbones -->
+    <line x1="-160" y1="-140" x2="160" y2="140" stroke="#f8fafc" stroke-width="26" stroke-linecap="round"/>
+    <line x1="160" y1="-140" x2="-160" y2="140" stroke="#f8fafc" stroke-width="26" stroke-linecap="round"/>
+    <!-- Skull Base -->
+    <circle cx="0" cy="20" r="110" fill="#f8fafc"/>
+    <rect x="-60" y="90" width="120" height="60" rx="14" fill="#f8fafc"/>
+    <!-- Eye sockets -->
+    <ellipse cx="-42" cy="18" rx="26" ry="32" fill="#0f172a"/>
+    <ellipse cx="42" cy="18" rx="26" ry="32" fill="#0f172a"/>
+    <!-- Nose -->
+    <polygon points="0,52 -12,74 12,74" fill="#0f172a"/>
+    <!-- Teeth -->
+    <line x1="-30" y1="110" x2="-30" y2="140" stroke="#0f172a" stroke-width="7"/>
+    <line x1="0" y1="110" x2="0" y2="140" stroke="#0f172a" stroke-width="7"/>
+    <line x1="30" y1="110" x2="30" y2="140" stroke="#0f172a" stroke-width="7"/>
+
+    <!-- Straw Hat on top -->
+    <ellipse cx="0" cy="-60" rx="210" ry="42" fill="#facc15" stroke="#ca8a04" stroke-width="6"/>
+    <path d="M -90,-60 C -90,-150 90,-150 90,-60 Z" fill="#facc15" stroke="#ca8a04" stroke-width="6"/>
+    <!-- Red ribbon -->
+    <path d="M -92,-60 C -92,-85 92,-85 92,-60 Z" fill="#dc2626"/>
+  </g>
+
+  <!-- Big Stylized "ONE PIECE" Title -->
+  <g transform="translate(525, 830)">
+    <text x="0" y="8" fill="#082f49" font-family="'Arial Black', Impact, sans-serif" font-size="160" font-weight="900" text-anchor="middle" letter-spacing="8">ONE PIECE</text>
+    <text x="0" y="0" fill="url(#gold-op)" stroke="#0c4a6e" stroke-width="14" stroke-linejoin="round" font-family="'Arial Black', Impact, sans-serif" font-size="160" font-weight="900" text-anchor="middle" letter-spacing="8">ONE PIECE</text>
+    <text x="0" y="0" fill="url(#gold-op)" font-family="'Arial Black', Impact, sans-serif" font-size="160" font-weight="900" text-anchor="middle" letter-spacing="8">ONE PIECE</text>
+  </g>
+
+  <!-- Japanese Kanji -->
+  <text x="525" y="950" fill="#bae6fd" font-family="'Noto Sans JP', sans-serif" font-size="46" font-weight="bold" text-anchor="middle" letter-spacing="16">ワンピース</text>
+
+  <!-- Volume Subtitle: ROMANCE DAWN -->
+  <rect x="220" y="1050" width="610" height="74" rx="14" fill="#0f172a" fill-opacity="0.8" stroke="#facc15" stroke-width="2"/>
+  <text x="525" y="1098" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="30" font-weight="800" text-anchor="middle" letter-spacing="4">ROMANCE DAWN — 冒険の夜明け</text>
+
+  <!-- Author Eiichiro Oda -->
+  <text x="525" y="1320" fill="#ffffff" font-family="Georgia, serif" font-size="48" font-weight="bold" text-anchor="middle" letter-spacing="6">EIICHIRO ODA</text>
+  <text x="525" y="1375" fill="#fde047" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="22" font-weight="700" text-anchor="middle" letter-spacing="8">STORY &amp; ART</text>
+
+  <!-- Bottom Bar -->
+  <line x1="120" y1="1460" x2="930" y2="1460" stroke="#facc15" stroke-width="4" stroke-opacity="0.6"/>
+  <text x="525" y="1510" fill="#bae6fd" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" letter-spacing="6">SHONEN JUMP · VIZ MEDIA</text>
+</svg>

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 1600" width="1050" height="1600">
+  <defs>
+    <linearGradient id="bg-aot" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#18181b"/>
+      <stop offset="50%" stop-color="#27272a"/>
+      <stop offset="100%" stop-color="#450a0a"/>
+    </linearGradient>
+    <linearGradient id="blood-red" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#b91c1c"/>
+    </linearGradient>
+  </defs>
+  <rect width="1050" height="1600" fill="url(#bg-aot)"/>
+
+  <!-- Top Kodansha banner -->
+  <rect x="0" y="0" width="1050" height="100" fill="#09090b" fill-opacity="0.6"/>
+  <rect x="60" y="22" width="220" height="56" rx="8" fill="#991b1b"/>
+  <text x="170" y="60" fill="#ffffff" font-family="'Arial Black', sans-serif" font-size="24" font-weight="900" text-anchor="middle" letter-spacing="2">KODANSHA</text>
+  <text x="960" y="65" fill="#ef4444" font-family="'Arial Black', sans-serif" font-size="34" font-weight="900" text-anchor="end">VOL. 1</text>
+
+  <!-- Survey Corps Wings of Freedom Emblem -->
+  <g transform="translate(525, 470)">
+    <!-- Shield Base -->
+    <path d="M 0,-150 L 120,-110 L 120,60 C 120,130 0,180 0,180 C 0,180 -120,130 -120,60 L -120,-110 Z" fill="#1e293b" stroke="#cbd5e1" stroke-width="8"/>
+    <!-- Diagonal split: white wing & blue wing -->
+    <!-- Blue wing -->
+    <path d="M -80,-60 L -20,-80 L -10,-10 L -40,30 L -70,10 Z M -60,-20 L -10,-30 L 0,30 L -30,60 Z M -40,20 L 0,10 L 10,70 L -20,95 Z" fill="#0284c7"/>
+    <!-- White wing -->
+    <path d="M 80,-40 L 20,-60 L 10,10 L 40,50 L 70,30 Z M 60,0 L 10,-10 L 0,50 L 30,80 Z M 40,40 L 0,30 L -10,90 L 20,115 Z" fill="#f8fafc"/>
+  </g>
+
+  <!-- Big Stylized "ATTACK ON TITAN" Title -->
+  <g transform="translate(525, 830)">
+    <text x="0" y="8" fill="#450a0a" font-family="'Arial Black', Impact, sans-serif" font-size="110" font-weight="900" text-anchor="middle" letter-spacing="6">ATTACK ON TITAN</text>
+    <text x="0" y="0" fill="url(#blood-red)" stroke="#09090b" stroke-width="12" stroke-linejoin="round" font-family="'Arial Black', Impact, sans-serif" font-size="110" font-weight="900" text-anchor="middle" letter-spacing="6">ATTACK ON TITAN</text>
+    <text x="0" y="0" fill="url(#blood-red)" font-family="'Arial Black', Impact, sans-serif" font-size="110" font-weight="900" text-anchor="middle" letter-spacing="6">ATTACK ON TITAN</text>
+  </g>
+
+  <!-- Japanese Kanji: 進撃の巨人 -->
+  <text x="525" y="950" fill="#fecaca" font-family="'Noto Sans JP', serif" font-size="52" font-weight="bold" text-anchor="middle" letter-spacing="18">進撃の巨人</text>
+
+  <!-- Volume Subtitle: TO YOU, 2,000 YEARS FROM NOW -->
+  <rect x="200" y="1050" width="650" height="74" rx="14" fill="#09090b" fill-opacity="0.8" stroke="#ef4444" stroke-width="2"/>
+  <text x="525" y="1098" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="26" font-weight="800" text-anchor="middle" letter-spacing="4">TO YOU, IN 2,000 YEARS — 二千年後の君へ</text>
+
+  <!-- Author Hajime Isayama -->
+  <text x="525" y="1320" fill="#ffffff" font-family="Georgia, serif" font-size="48" font-weight="bold" text-anchor="middle" letter-spacing="6">HAJIME ISAYAMA</text>
+  <text x="525" y="1375" fill="#f87171" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="22" font-weight="700" text-anchor="middle" letter-spacing="8">STORY &amp; ART</text>
+
+  <!-- Bottom Bar -->
+  <line x1="120" y1="1460" x2="930" y2="1460" stroke="#ef4444" stroke-width="4" stroke-opacity="0.6"/>
+  <text x="525" y="1510" fill="#9ca3af" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" letter-spacing="6">KODANSHA COMICS</text>
+</svg>

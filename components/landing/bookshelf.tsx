@@ -11,7 +11,7 @@ export function Bookshelf({ books }: { books: Book[] }) {
       <div className="px-6 mb-2">
         <h2 className="section-heading mb-1">{bookshelfConfig.title}</h2>
         <p className="text-xs text-muted-foreground">
-          Foundational books on engineering management, high-output execution & systems leadership
+          Shonen Jump classics, iconic manga volumes & influential engineering reads
         </p>
       </div>
 

@@ -26,7 +26,7 @@ export const sectionNotes: Partial<Record<SectionId, SectionNoteConfig>> = {
     side: "right",
   },
   bookshelf: {
-    text: "Management &\nleadership books",
+    text: "Naruto, Bleach &\nmanga collection",
     side: "left",
   },
   certifications: {

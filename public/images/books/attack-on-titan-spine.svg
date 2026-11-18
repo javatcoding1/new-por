@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 1600" width="220" height="1600" preserveAspectRatio="none">
+  <defs>
+    <linearGradient id="spine-bg-aot" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#18181b"/>
+      <stop offset="50%" stop-color="#27272a"/>
+      <stop offset="100%" stop-color="#18181b"/>
+    </linearGradient>
+  </defs>
+  <rect width="220" height="1600" fill="url(#spine-bg-aot)"/>
+
+  <!-- Top Kodansha Logo -->
+  <rect x="25" y="40" width="170" height="70" rx="10" fill="#991b1b"/>
+  <text x="110" y="85" fill="#ffffff" font-family="'Arial Black', sans-serif" font-size="24" font-weight="900" text-anchor="middle">KC</text>
+
+  <!-- Big Volume Number 1 -->
+  <circle cx="110" cy="200" r="50" fill="#ef4444"/>
+  <text x="110" y="222" fill="#ffffff" font-family="'Arial Black', Impact, sans-serif" font-size="64" font-weight="900" text-anchor="middle">1</text>
+
+  <!-- Survey corps wings mini icon -->
+  <polygon points="110,290 85,320 110,340 135,320" fill="#0284c7"/>
+
+  <!-- Vertical "ATTACK ON TITAN" Title -->
+  <g transform="rotate(-90 110 740)">
+    <text x="110" y="760" fill="#ffffff" stroke="#991b1b" stroke-width="6" font-family="'Arial Black', Impact, sans-serif" font-size="74" font-weight="900" text-anchor="middle" letter-spacing="6">ATTACK ON TITAN</text>
+  </g>
+
+  <!-- Japanese Kanji -->
+  <g transform="rotate(-90 110 1160)">
+    <text x="110" y="1170" fill="#ef4444" font-family="'Noto Sans JP', serif" font-size="34" font-weight="bold" text-anchor="middle" letter-spacing="8">進撃の巨人</text>
+  </g>
+
+  <!-- Rotated Author Text -->
+  <g transform="rotate(-90 110 1350)">
+    <text x="110" y="1362" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="34" font-weight="800" text-anchor="middle" letter-spacing="4">ISAYAMA</text>
+  </g>
+
+  <!-- Bottom Kodansha badge -->
+  <rect x="35" y="1490" width="150" height="50" rx="8" fill="#991b1b"/>
+  <text x="110" y="1525" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="20" font-weight="900" text-anchor="middle" letter-spacing="2">KODANSHA</text>
+</svg>

@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 1600" width="1050" height="1600">
+  <defs>
+    <linearGradient id="bg-naruto" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ff7700"/>
+      <stop offset="45%" stop-color="#ff5500"/>
+      <stop offset="100%" stop-color="#111111"/>
+    </linearGradient>
+    <linearGradient id="gold-grad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffd000"/>
+      <stop offset="100%" stop-color="#ff9900"/>
+    </linearGradient>
+  </defs>
+  <rect width="1050" height="1600" fill="url(#bg-naruto)"/>
+
+  <!-- Shonen Jump top banner -->
+  <rect x="0" y="0" width="1050" height="110" fill="#000000" fill-opacity="0.5"/>
+  <rect x="60" y="24" width="220" height="62" rx="10" fill="#e11d48"/>
+  <text x="170" y="66" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Arial Black', sans-serif" font-size="28" font-weight="900" text-anchor="middle" letter-spacing="2">SHONEN JUMP</text>
+  <text x="960" y="70" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="34" font-weight="900" text-anchor="end">VOL. 1</text>
+
+  <!-- Big Uzumaki Spiral in the background -->
+  <g transform="translate(525, 780)" opacity="0.22">
+    <path d="M 0,0 C 20,-10 40,-5 50,15 C 65,45 45,85 10,95 C -45,110 -95,75 -110,20 C -130,-55 -80,-125 -10,-145 C 80,-170 170,-105 195,-15 C 225,100 145,210 20,240 C -130,275 -260,175 -295,20 C -335,-160 -210,-315 -25,-355 C 180,-400 360,-250 405,-30" fill="none" stroke="#ffffff" stroke-width="28" stroke-linecap="round"/>
+  </g>
+
+  <!-- Konoha Leaf Village Forehead Protector Emblem -->
+  <g transform="translate(525, 420)">
+    <!-- Metal plate -->
+    <rect x="-240" y="-80" width="480" height="160" rx="30" fill="#2d3748" stroke="#cbd5e1" stroke-width="6"/>
+    <!-- Rivets -->
+    <circle cx="-200" cy="-45" r="9" fill="#94a3b8"/>
+    <circle cx="-200" cy="45" r="9" fill="#94a3b8"/>
+    <circle cx="200" cy="-45" r="9" fill="#94a3b8"/>
+    <circle cx="200" cy="45" r="9" fill="#94a3b8"/>
+    <!-- Leaf Insignia with Spiral -->
+    <path d="M -30,-15 C -45,-15 -60,0 -50,20 C -40,40 -15,40 5,25 C 25,10 40,-10 65,-25 C 45,-5 25,10 10,25 C -15,45 -55,40 -65,10 C -75,-20 -50,-40 -20,-35 C 10,-30 25,-15 15,5 C 5,25 -20,20 -20,5 C -20,-5 -10,-10 -5,-5" fill="none" stroke="#f8fafc" stroke-width="12" stroke-linecap="round"/>
+    <polygon points="65,-25 85,-32 75,-12" fill="#f8fafc"/>
+  </g>
+
+  <!-- Big Stylized "NARUTO" Title -->
+  <g transform="translate(525, 820)">
+    <!-- Shadow effect -->
+    <text x="0" y="8" fill="#7c2d12" font-family="'Arial Black', Impact, sans-serif" font-size="160" font-weight="900" text-anchor="middle" letter-spacing="8" transform="skewX(-6)">NARUTO</text>
+    <text x="0" y="0" fill="url(#gold-grad)" stroke="#111111" stroke-width="16" stroke-linejoin="round" font-family="'Arial Black', Impact, sans-serif" font-size="160" font-weight="900" text-anchor="middle" letter-spacing="8" transform="skewX(-6)">NARUTO</text>
+    <text x="0" y="0" fill="url(#gold-grad)" font-family="'Arial Black', Impact, sans-serif" font-size="160" font-weight="900" text-anchor="middle" letter-spacing="8" transform="skewX(-6)">NARUTO</text>
+  </g>
+
+  <!-- Japanese Kanji -->
+  <text x="525" y="940" fill="#fef08a" font-family="'Noto Sans JP', sans-serif" font-size="52" font-weight="bold" text-anchor="middle" letter-spacing="16">うずまきナルト</text>
+
+  <!-- Volume Subtitle -->
+  <rect x="250" y="1040" width="550" height="70" rx="14" fill="#000000" fill-opacity="0.6" stroke="#ea580c" stroke-width="2"/>
+  <text x="525" y="1086" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="30" font-weight="700" text-anchor="middle" letter-spacing="3">VOL. 1: UZUMAKI NARUTO</text>
+
+  <!-- Author Masashi Kishimoto -->
+  <text x="525" y="1320" fill="#ffffff" font-family="Georgia, serif" font-size="44" font-weight="bold" text-anchor="middle" letter-spacing="4">MASASHI KISHIMOTO</text>
+  <text x="525" y="1380" fill="#fdba74" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="22" font-weight="600" text-anchor="middle" letter-spacing="6">STORY &amp; ART</text>
+
+  <!-- Bottom Viz Media / Jump Comics banner -->
+  <line x1="120" y1="1460" x2="930" y2="1460" stroke="#ff7700" stroke-width="4" stroke-opacity="0.6"/>
+  <text x="525" y="1510" fill="#9ca3af" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" letter-spacing="6">VIZ MEDIA · SHONEN JUMP MANGA</text>
+</svg>

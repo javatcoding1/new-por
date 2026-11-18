@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 1600" width="1050" height="1600">
+  <defs>
+    <linearGradient id="bg-jjk" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3b0764"/>
+      <stop offset="45%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#09090b"/>
+    </linearGradient>
+    <linearGradient id="purple-fire" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#c084fc"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+  </defs>
+  <rect width="1050" height="1600" fill="url(#bg-jjk)"/>
+
+  <!-- Shonen Jump top badge -->
+  <rect x="0" y="0" width="1050" height="100" fill="#09090b" fill-opacity="0.6"/>
+  <rect x="60" y="22" width="220" height="56" rx="8" fill="#e11d48"/>
+  <text x="170" y="60" fill="#ffffff" font-family="'Arial Black', sans-serif" font-size="26" font-weight="900" text-anchor="middle" letter-spacing="2">SHONEN JUMP</text>
+  <text x="960" y="65" fill="#c084fc" font-family="'Arial Black', sans-serif" font-size="34" font-weight="900" text-anchor="end">VOL. 1</text>
+
+  <!-- Sukuna Cursed Seal / Malevolent Shrine Insignia -->
+  <g transform="translate(525, 470)">
+    <!-- Outer energy ring -->
+    <circle cx="0" cy="0" r="190" fill="none" stroke="#a855f7" stroke-width="4" stroke-dasharray="14,8" opacity="0.6"/>
+    <circle cx="0" cy="0" r="160" fill="#09090b" stroke="#c084fc" stroke-width="8"/>
+    <!-- Cursed eye slits & marks -->
+    <path d="M -90,-40 C -40,-80 40,-80 90,-40 C 60,-10 -60,-10 -90,-40 Z" fill="#c084fc"/>
+    <circle cx="-40" cy="-35" r="10" fill="#09090b"/>
+    <circle cx="40" cy="-35" r="10" fill="#09090b"/>
+    <!-- Lower eyes -->
+    <ellipse cx="-45" cy="15" rx="20" ry="8" fill="#a855f7" transform="rotate(-15 -45 15)"/>
+    <ellipse cx="45" cy="15" rx="20" ry="8" fill="#a855f7" transform="rotate(15 45 15)"/>
+    <!-- Sukuna facial stripes -->
+    <path d="M -110,-20 L -140,-20 M 110,-20 L 140,-20" stroke="#c084fc" stroke-width="10" stroke-linecap="round"/>
+    <path d="M -100,20 L -135,20 M 100,20 L 135,20" stroke="#c084fc" stroke-width="10" stroke-linecap="round"/>
+    <!-- Center forehead cursed symbol -->
+    <polygon points="0,-120 18,-80 0,-95 -18,-80" fill="#f43f5e"/>
+  </g>
+
+  <!-- Big Stylized "JUJUTSU KAISEN" Title -->
+  <g transform="translate(525, 830)">
+    <text x="0" y="8" fill="#3b0764" font-family="'Arial Black', Impact, sans-serif" font-size="120" font-weight="900" text-anchor="middle" letter-spacing="6">JUJUTSU KAISEN</text>
+    <text x="0" y="0" fill="url(#purple-fire)" stroke="#09090b" stroke-width="14" stroke-linejoin="round" font-family="'Arial Black', Impact, sans-serif" font-size="120" font-weight="900" text-anchor="middle" letter-spacing="6">JUJUTSU KAISEN</text>
+    <text x="0" y="0" fill="url(#purple-fire)" font-family="'Arial Black', Impact, sans-serif" font-size="120" font-weight="900" text-anchor="middle" letter-spacing="6">JUJUTSU KAISEN</text>
+  </g>
+
+  <!-- Japanese Kanji: 呪術廻戦 -->
+  <text x="525" y="950" fill="#f5d0fe" font-family="'Noto Sans JP', serif" font-size="52" font-weight="bold" text-anchor="middle" letter-spacing="18">呪術廻戦</text>
+
+  <!-- Volume Subtitle: RYOMEN SUKUNA -->
+  <rect x="230" y="1050" width="590" height="74" rx="14" fill="#09090b" fill-opacity="0.8" stroke="#a855f7" stroke-width="2"/>
+  <text x="525" y="1098" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="800" text-anchor="middle" letter-spacing="4">VOL. 1: RYOMEN SUKUNA — 両面宿儺</text>
+
+  <!-- Author Gege Akutami -->
+  <text x="525" y="1320" fill="#ffffff" font-family="Georgia, serif" font-size="48" font-weight="bold" text-anchor="middle" letter-spacing="6">GEGE AKUTAMI</text>
+  <text x="525" y="1375" fill="#c084fc" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="22" font-weight="700" text-anchor="middle" letter-spacing="8">STORY &amp; ART</text>
+
+  <!-- Bottom Bar -->
+  <line x1="120" y1="1460" x2="930" y2="1460" stroke="#a855f7" stroke-width="4" stroke-opacity="0.6"/>
+  <text x="525" y="1510" fill="#d8b4fe" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" letter-spacing="6">SHONEN JUMP · VIZ MEDIA</text>
+</svg>
