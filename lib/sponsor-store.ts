@@ -9,8 +9,8 @@ import "server-only";
 import type { Sponsor } from "@/config/types";
 
 const TOKEN = process.env.SPONSOR_GITHUB_TOKEN;
-const OWNER = process.env.SPONSOR_REPO_OWNER ?? "AdityaKodez";
-const REPO = process.env.SPONSOR_REPO_NAME ?? "adityaojha";
+const OWNER = process.env.SPONSOR_REPO_OWNER ?? "javatcoding1";
+const REPO = process.env.SPONSOR_REPO_NAME ?? "new-por";
 const BRANCH = "main";
 const SPONSORS_JSON_PATH = "config/sponsors.generated.json";
 const LOGO_DIR = "public/sponsors";
